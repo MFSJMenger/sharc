@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from __future__ import print_function
+
 import sys
 from general_tools import readFile, writeOutput
 from general_tools import NFind, getValues, readFile, scaleCoords

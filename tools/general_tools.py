@@ -48,6 +48,7 @@ def writeOutput(fileName,content):
     OUT.write(content)
     OUT.close()
     return;
+
 def getMoldenAtoms(i,coords):
         return "% 4s %4d  %4d    % 14.10f   % 14.10f   % 14.10f \n"  % (AtomNumberToName[coords[0]],i, coords[0], coords[1],coords[2],coords[3])
 
@@ -204,3 +205,5 @@ def Nfind(text,keyword,length=100,shift=0,begin=0):
        return text[start+shift:len(text)],-1
     else:
        return text[start+shift:start+shift+length],start+shift+length
+
+
