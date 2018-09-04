@@ -19,7 +19,8 @@ def getCoordinates(fileName,NAtoms):
 def getNAtoms(fileName):
     with open(fileName,'r') as f:
         text = f.read()
-        NAtoms = int(NFind(text,'NAtoms=',15,0).split()[-1])
+        NAtoms = int( (NFind(text,'NAtoms=',40,0).split("=")[1]
+                     ).split()[0])
     return NAtoms
 
 
